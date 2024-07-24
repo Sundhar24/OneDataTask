@@ -19,6 +19,9 @@ class BluetoothVC: UIViewController {
     
     @IBOutlet weak var connectedListTableView: UITableView!
     
+    @IBOutlet weak var characterListBtn: UIButton!
+    
+    
     var bluetoothModel = BluetoothViewModel()
     var cancel: Set<AnyCancellable> = []
 
@@ -31,6 +34,7 @@ class BluetoothVC: UIViewController {
         callModelFunc()
         sizeControl()
         self.refreshBtn.addTarget(self, action: #selector(RefreshTapped), for: .touchUpInside)
+        self.characterListBtn.addTarget(self, action: #selector(CharacterListTapped), for: .touchUpInside)
         
     }
   
@@ -42,6 +46,20 @@ class BluetoothVC: UIViewController {
         self.connectedListTableView.reloadData()
         
     }
+    
+    @objc func CharacterListTapped(){
+
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let vc: CharacterListVC = mainStoryboard.instantiateViewController(withIdentifier: "CharacterListVC") as! CharacterListVC
+        vc.modalTransitionStyle = UIModalTransitionStyle.crossDissolve
+        vc.modalPresentationStyle = .overFullScreen
+//        self.navigationController?.pushViewController(vc, animated: true)
+        self.present(vc, animated: true)
+
+    }
+    
+    
+    
     
     func callModelFunc() {
         bluetoothModel.$discoveredDevices
@@ -63,6 +81,7 @@ class BluetoothVC: UIViewController {
         
         self.lblView.layer.cornerRadius = 10
         self.refreshBtn.layer.cornerRadius = 10
+        self.characterListBtn.layer.cornerRadius = 10
 //        self.connectedListTableView.backgroundColor = .green
     }
     

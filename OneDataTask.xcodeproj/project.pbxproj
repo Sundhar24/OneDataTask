@@ -16,6 +16,13 @@
 		110224C62C4E5654000C5971 /* ListedBluetoothTVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 110224C42C4E5654000C5971 /* ListedBluetoothTVC.xib */; };
 		11147C272C4E622200D30F2D /* BluetoothDevices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11147C262C4E622200D30F2D /* BluetoothDevices.swift */; };
 		11147C292C4E62B300D30F2D /* BluetoothViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11147C282C4E62B300D30F2D /* BluetoothViewModel.swift */; };
+		11966FA12C50CD4D001EA2F7 /* CharacterListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11966FA02C50CD4D001EA2F7 /* CharacterListModel.swift */; };
+		11966FA32C50CD88001EA2F7 /* CharacterListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11966FA22C50CD88001EA2F7 /* CharacterListViewModel.swift */; };
+		11966FA52C50CDFB001EA2F7 /* CharacterListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11966FA42C50CDFB001EA2F7 /* CharacterListVC.swift */; };
+		11966FA82C50CEFA001EA2F7 /* CharacterListCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11966FA62C50CEFA001EA2F7 /* CharacterListCVC.swift */; };
+		11966FA92C50CEFA001EA2F7 /* CharacterListCVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11966FA72C50CEFA001EA2F7 /* CharacterListCVC.xib */; };
+		11966FAB2C50CF29001EA2F7 /* CharacterDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11966FAA2C50CF29001EA2F7 /* CharacterDetailsVC.swift */; };
+		7D4961FB3085EF739AB479D7 /* Pods_OneDataTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 300B185033A05A0EED48DFDA /* Pods_OneDataTask.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +37,15 @@
 		110224C42C4E5654000C5971 /* ListedBluetoothTVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListedBluetoothTVC.xib; sourceTree = "<group>"; };
 		11147C262C4E622200D30F2D /* BluetoothDevices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothDevices.swift; sourceTree = "<group>"; };
 		11147C282C4E62B300D30F2D /* BluetoothViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BluetoothViewModel.swift; sourceTree = "<group>"; };
+		11966FA02C50CD4D001EA2F7 /* CharacterListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListModel.swift; sourceTree = "<group>"; };
+		11966FA22C50CD88001EA2F7 /* CharacterListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListViewModel.swift; sourceTree = "<group>"; };
+		11966FA42C50CDFB001EA2F7 /* CharacterListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListVC.swift; sourceTree = "<group>"; };
+		11966FA62C50CEFA001EA2F7 /* CharacterListCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterListCVC.swift; sourceTree = "<group>"; };
+		11966FA72C50CEFA001EA2F7 /* CharacterListCVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CharacterListCVC.xib; sourceTree = "<group>"; };
+		11966FAA2C50CF29001EA2F7 /* CharacterDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailsVC.swift; sourceTree = "<group>"; };
+		300B185033A05A0EED48DFDA /* Pods_OneDataTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OneDataTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		94B6DA4EE9294F57025F5486 /* Pods-OneDataTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneDataTask.release.xcconfig"; path = "Target Support Files/Pods-OneDataTask/Pods-OneDataTask.release.xcconfig"; sourceTree = "<group>"; };
+		E52A7EA4367D2092E3831960 /* Pods-OneDataTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OneDataTask.debug.xcconfig"; path = "Target Support Files/Pods-OneDataTask/Pods-OneDataTask.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,17 +53,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4961FB3085EF739AB479D7 /* Pods_OneDataTask.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0AE5079CA2C07C4CFF960F22 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				300B185033A05A0EED48DFDA /* Pods_OneDataTask.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		1102249B2C4E381F000C5971 = {
 			isa = PBXGroup;
 			children = (
 				110224A62C4E381F000C5971 /* OneDataTask */,
 				110224A52C4E381F000C5971 /* Products */,
+				B8158F8902576B28EE142767 /* Pods */,
+				0AE5079CA2C07C4CFF960F22 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				110224A72C4E381F000C5971 /* AppDelegate.swift */,
+				11966F9B2C50CCED001EA2F7 /* CharacterListPage */,
 				110224BB2C4E3ABB000C5971 /* BluetoothPage */,
 				110224AD2C4E381F000C5971 /* Main.storyboard */,
 				110224B02C4E3823000C5971 /* Assets.xcassets */,
@@ -116,6 +144,60 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		11966F9B2C50CCED001EA2F7 /* CharacterListPage */ = {
+			isa = PBXGroup;
+			children = (
+				11966F9F2C50CCFF001EA2F7 /* Model */,
+				11966F9E2C50CCFB001EA2F7 /* View */,
+				11966F9D2C50CCF7001EA2F7 /* ViewModel */,
+				11966F9C2C50CCF4001EA2F7 /* Controller */,
+			);
+			path = CharacterListPage;
+			sourceTree = "<group>";
+		};
+		11966F9C2C50CCF4001EA2F7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11966FA42C50CDFB001EA2F7 /* CharacterListVC.swift */,
+				11966FAA2C50CF29001EA2F7 /* CharacterDetailsVC.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		11966F9D2C50CCF7001EA2F7 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11966FA22C50CD88001EA2F7 /* CharacterListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		11966F9E2C50CCFB001EA2F7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				11966FA62C50CEFA001EA2F7 /* CharacterListCVC.swift */,
+				11966FA72C50CEFA001EA2F7 /* CharacterListCVC.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		11966F9F2C50CCFF001EA2F7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				11966FA02C50CD4D001EA2F7 /* CharacterListModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B8158F8902576B28EE142767 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E52A7EA4367D2092E3831960 /* Pods-OneDataTask.debug.xcconfig */,
+				94B6DA4EE9294F57025F5486 /* Pods-OneDataTask.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 110224B82C4E3823000C5971 /* Build configuration list for PBXNativeTarget "OneDataTask" */;
 			buildPhases = (
+				B30F93FFC627BBDCF282D298 /* [CP] Check Pods Manifest.lock */,
 				110224A02C4E381F000C5971 /* Sources */,
 				110224A12C4E381F000C5971 /* Frameworks */,
 				110224A22C4E381F000C5971 /* Resources */,
+				3F4F158F61804A83AA1A2640 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -177,11 +261,54 @@
 				110224B42C4E3823000C5971 /* LaunchScreen.storyboard in Resources */,
 				110224B12C4E3823000C5971 /* Assets.xcassets in Resources */,
 				110224AF2C4E381F000C5971 /* Main.storyboard in Resources */,
+				11966FA92C50CEFA001EA2F7 /* CharacterListCVC.xib in Resources */,
 				110224C62C4E5654000C5971 /* ListedBluetoothTVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3F4F158F61804A83AA1A2640 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneDataTask/Pods-OneDataTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OneDataTask/Pods-OneDataTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OneDataTask/Pods-OneDataTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B30F93FFC627BBDCF282D298 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OneDataTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		110224A02C4E381F000C5971 /* Sources */ = {
@@ -189,8 +316,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				110224C52C4E5654000C5971 /* ListedBluetoothTVC.swift in Sources */,
+				11966FAB2C50CF29001EA2F7 /* CharacterDetailsVC.swift in Sources */,
 				110224A82C4E381F000C5971 /* AppDelegate.swift in Sources */,
+				11966FA82C50CEFA001EA2F7 /* CharacterListCVC.swift in Sources */,
+				11966FA52C50CDFB001EA2F7 /* CharacterListVC.swift in Sources */,
 				11147C272C4E622200D30F2D /* BluetoothDevices.swift in Sources */,
+				11966FA32C50CD88001EA2F7 /* CharacterListViewModel.swift in Sources */,
+				11966FA12C50CD4D001EA2F7 /* CharacterListModel.swift in Sources */,
 				11147C292C4E62B300D30F2D /* BluetoothViewModel.swift in Sources */,
 				110224C22C4E3E4A000C5971 /* BluetoothVC.swift in Sources */,
 			);
@@ -334,6 +466,7 @@
 		};
 		110224B92C4E3823000C5971 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E52A7EA4367D2092E3831960 /* Pods-OneDataTask.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -361,6 +494,7 @@
 		};
 		110224BA2C4E3823000C5971 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94B6DA4EE9294F57025F5486 /* Pods-OneDataTask.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

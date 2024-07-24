@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreBluetooth
+import Alamofire
 
 class BluetoothViewModel: NSObject, ObservableObject, CBCentralManagerDelegate, CBPeripheralDelegate {
     
@@ -60,6 +61,28 @@ class BluetoothViewModel: NSObject, ObservableObject, CBCentralManagerDelegate, 
         centralManager.connect(peripheral, options: nil)
     }
     
-    
+    func characterListAPI(completion: @escaping (Result<CharacterListModel, Error>) -> Void) {
+        let url = "https://rickandmortyapi.com/api/character/?page=22"
+        
+        AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default)
+            .validate()
+            .responseJSON { response in
+                switch response.result {
+                case .success(let value):
+                    if let json = value as? [String: Any] {
+                        let characterListModel = CharacterListModel(json: json)
+                        completion(.success(characterListModel))
+                    } else {
+                        let error = NSError(domain: "ParsingError", code: 0, userInfo: [NSLocalizedDescriptionKey: "Failed to parse JSON"])
+                        completion(.failure(error))
+                    }
+                    
+                case .failure(let error):
+                    print("Error fetching data: \(error)")
+                    completion(.failure(error))
+                }
+            }
+    }
+
 }
 
